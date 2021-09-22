@@ -1,4 +1,4 @@
-# NYTimes-Bestseller-eBay-Tool
+# NYTimes Bestseller eBay Tool
 
 <div float="left">
   <img src="https://github.com/naiemg/NYTimes-Bestseller-eBay-Tool/blob/main/demo_gif_1.gif?raw=true" width="49%" />
