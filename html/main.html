@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NYTimes Bestseller - eBay Tool</title>
+    <style>
+        body {
+            padding: auto;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .page_title {
+            text-align: center;
+            color: #0258a4;
+            font-variant-caps: petite-caps;
+        }
+
+        .hp_form {
+            text-align: center;
+            max-width: 70%;
+            padding: 10px;
+            font-size: larger;
+        }
+
+        #button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: #18558a;
+            text-align: center;
+            cursor: pointer;
+            width: 75%;
+            font-size: 18px;
+            margin-top: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        fieldset {
+            border-color: cornflowerblue;
+            border-width: 20px;
+            padding: 20px;
+        }
+
+        img {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page_title">
+        <h1>NYTimes Bestseller - eBay Tool</h1>
+        <img src="../images/nytimes_logo.png" alt="NYTimes Logo" height="75">
+        <img src="../images/ebay_logo.svg" alt="eBay Logo" height="75">
+    </div>
+    <center>
+        <div class="hp_form">
+            <form action="search" method="get">
+                <fieldset>
+                    <label style="font-weight: bold;">GENRE</label>
+                    <hr>
+                    <div class="genre">
+                        <input type="radio" name="genre" value="hardcover-fiction" id="hardcover-fiction" checked>
+                        <label for="hardcover-fiction">hardcover-fiction</label>
+                    </div>
+                    <div class="genre">
+                        <input type="radio" name="genre" value="hardcover-nonfiction" id="hardcover-nonfiction">
+                        <label for="hardcover-nonfiction">hardcover-nonfiction</label>
+                    </div>
+                    <br>
+                    <br>
+                    <label style="font-weight: bold;" for="daterange">DATE</label>
+                    <hr>
+                    <input type="date" id="daterange" name="daterange" min="2009-01-01" required>
+                    <br>
+                    <br>
+                    <input id='button' type="submit" value="Search" />
+                </fieldset>
+            </form>
+        </div>
+    </center>
+</body>
+
+</html>
